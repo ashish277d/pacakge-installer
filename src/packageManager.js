@@ -70,13 +70,13 @@ const sortModuleDepependency = parsedPackages => {
     return response;
 };
 
-const packageInst = [
-    "KittenService: Cyberportal",
-    "Leetmeme: Cyberportal",
-    "Cyberportal: Ice",
-    "CamelCaser: KittenService"
+// const packageInst = [
+//     "KittenService: Cyberportal",
+//     "Leetmeme: Cyberportal",
+//     "Cyberportal: Ice",
+//     "CamelCaser: KittenService"
 
-];
+// ];
 // const results = PackageManager(packageInst).packageInsaller();
 // console.log(results);
 
