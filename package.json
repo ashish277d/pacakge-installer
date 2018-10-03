@@ -1,0 +1,13 @@
+{
+	"name": "packagemanager",
+	"version": "1.0.0",
+	"description": "Code exercise to create package manager",
+	"scripts": {
+        "test": "jest --coverage test/test.js"
+    },
+	"author": "Ashish Dehariya",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^23.6.0"
+	}
+}
