@@ -32,3 +32,9 @@ npm install
 ```
 npm test
 ```
+## Tech Stack used
+
+```
+Javascript
+Jest
+```
