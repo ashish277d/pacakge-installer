@@ -1,6 +1,6 @@
 'use strict'
 
-const PackageManager = inputData => {
+const packageManager = inputData => {
     if (inputData === null)
         throw 'packages is required';
     if (!Array.isArray(inputData))
@@ -13,6 +13,7 @@ const PackageManager = inputData => {
     const packages = inputData;
     const validPackages = packageValidator(packages);
     return {
+        packages: inputData,
         packageInsaller() {
             return sortModuleDepependency(validPackages).join(', ');
         }
@@ -80,4 +81,4 @@ const sortModuleDepependency = parsedPackages => {
 // const results = PackageManager(packageInst).packageInsaller();
 // console.log(results);
 
-// module.exports = PackageManager;
+module.exports = packageManager;
