@@ -21,3 +21,23 @@ describe('Package Manager', () =>{
     }).toThrow('packages is required');
   });
 });
+  describe('Test fails when', () => {		
+    test('given input is a single string', () => {
+      expect(() => { PackageManager('a').packageInsaller(); }).toThrow();
+    });
+    test('given input a number', () =>{
+      expect(() => { PackageManager(1).packageInsaller(); }).toThrow();
+    });
+    test('given input an object', () => {
+      expect(() => { PackageManager({ a:'b' }).packageInsaller(); }).toThrow();
+    });
+
+    test('givem array of numbers', () =>{
+      expect(() =>{ PackageManager([1,2]).packageInsaller(); }).toThrow();
+    });
+    test('given array of objects', () => {
+      expect(() => { PackageManager([{a:'b'},{a:'b'}]).packageInsaller(); }).toThrow();
+    });
+
+     });
+
