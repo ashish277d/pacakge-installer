@@ -19,4 +19,16 @@ The function should reject as invalid a dependency specification that contains c
 The function should output a comma separated string of package names in the order of install, such that a package’s dependency will
 always precede that package.
 
-# Steps to run
+## Steps to test this excercice
+
+```
+pull or fork git repo.
+```
+
+```
+npm install
+```
+
+```
+npm test
+```
